@@ -1,0 +1,31 @@
+{
+  "name": "db2-zos-mcp",
+  "version": "1.1.0",
+  "description": "MCP server for IBM DB2 z/OS — connect any MCP-compatible AI assistant to a DB2 z/OS database",
+  "main": "dist/index.js",
+  "bin": {
+    "db2-zos-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["mcp", "model-context-protocol", "db2", "zos", "z/os", "ibm", "mainframe", "database", "ai", "llm"],
+  "author": "marukoh",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "ibm_db": "^3.3.5",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["dist/", "README.md", "LICENSE"]
+}
