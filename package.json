@@ -1,7 +1,7 @@
 {
   "name": "db2-zos-mcp",
-  "version": "1.1.0",
-  "description": "MCP server for IBM DB2 z/OS \u2014 connect any MCP-compatible AI assistant to a DB2 z/OS database",
+  "version": "1.1.1",
+  "description": "MCP server for IBM DB2 z/OS — connect any MCP-compatible AI assistant to a DB2 z/OS database",
   "main": "dist/index.js",
   "bin": {
     "db2-zos-mcp": "dist/index.js"
