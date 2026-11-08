@@ -113,6 +113,16 @@ npm install
 npm test
 ```
 
+
+## Releasing
+
+Publishing is automated by [`.github/workflows/publish.yml`](.github/workflows/publish.yml) via npm Trusted Publishing:
+
+```bash
+npm version patch   # or minor / major — bumps package.json and creates the vX.Y.Z tag
+git push --follow-tags
+```
+
 ## License
 
 MIT
