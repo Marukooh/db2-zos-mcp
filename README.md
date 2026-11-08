@@ -5,7 +5,7 @@ MCP (Model Context Protocol) server for **IBM DB2 for z/OS**. Lets any MCP clien
 ## Prerequisites
 
 - Node.js 18+
-- Network access to the DB2 z/OS DRDA port (usually 446 or 5021 etc.).
+- Network access to the DB2 z/OS DRDA port (often 446).
 - A DB2 Connect license for z/OS targets (the `db2consv_*.lic` file in the driver's `license` folder), as required by IBM.
 
 `ibm_db` downloads the IBM CLI driver automatically on install. To use an existing driver instead, set `IBM_DB_HOME` to its path before installing.
